@@ -59,5 +59,3 @@ reset_time.addEventListener("click",()=>{
     totalSeconds = 0
     updateDisplay()
 })
-
-

@@ -16,20 +16,43 @@ header {
   border-bottom: 2px solid black;
   font-weight: 700;
   /* background-color: green; */
+  
 }
 
 nav {
-  display: flex;
   /* background-color: yellow; */
+  display: flex;
+  align-items: center;
 }
 
 nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
+  /* background-color: red; */
 }
 
 nav > ul > li {
   list-style: none;
   font-size: 30px;
+}
+
+nav>ul>li>a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#logo>a{
+  text-decoration: none;
+  color: black;
+}
+
+#menu-icon{
+  display: none;
 }
 
 main {
@@ -92,6 +115,12 @@ main {
 nav>ul{
       margin: auto;
   }
+  nav>ul>li{
+    display: none;
+  }
+  #menu-icon{
+  display: block;
+}
   #main-container {
     width: 800px;
     height: 250px;
