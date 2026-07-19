@@ -16,33 +16,33 @@ header {
   border-bottom: 2px solid black;
   font-weight: 700;
   /* background-color: green; */
-  
 }
 
 nav {
   /* background-color: yellow; */
   display: flex;
   align-items: center;
-}
-
-nav > ul {
+  justify-content: space-between;
   width: 100%;
+}
+.nav-links {
+  /* background-color: pink; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  gap: 20px;
   /* background-color: red; */
 }
 
-nav > ul > li {
+.nav-links {
   list-style: none;
-  font-size: 30px;
 }
 
-nav>ul>li>a{
+.nav-links a{
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -112,15 +112,34 @@ main {
 }
 
 @media (max-width: 768px) {
-nav>ul{
-      margin: auto;
-  }
-  nav>ul>li{
-    display: none;
-  }
   #menu-icon{
   display: block;
 }
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 30%;
+    border-radius: 5px;
+    /* border: 1px solid gainsboro; */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 2px 2px 9px gray;
+  }
+  
+  .nav-links li{
+    border-bottom: 1px solid gray;
+    width: 100%;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+
   #main-container {
     width: 800px;
     height: 250px;
