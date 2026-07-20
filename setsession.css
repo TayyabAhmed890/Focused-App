@@ -1,0 +1,53 @@
+#set-session-container{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 500px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-time-set{
+    height: 270px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: lightgreen; */
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    
+}
+
+.input-area{
+    /* background-color: red; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input{
+    padding: 10px;
+}
+
+#btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn:active{
+    transform: scale(1.03);
+}
+
+@media(max-width:768px) {
+    
+}
+
