@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focused. App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="setsessoin.css">
 </head>
 <body>
     <header>
       <nav>
         <h1 id="logo"><a href="/">Focused.</a></h1>
         <ul class="nav-links" id="links">
-          <li><a href="/setsession.html">Set Session</a></li>
+          <li><a href="/setsession.html">Create</a></li>
           <li><a href="/session.html">Sessions</a></li>
         </ul>
         <span id="menu-icon">
@@ -19,7 +20,24 @@
         </span>
       </nav>
     </header>
-    <h1 style="text-align: center; margin: 10px;">Set Session Page</h1>
+    <main id="set-session-container">
+      <h1>Set Session</h1>
+      <section id="timer-area">
+        <form id="form-time-set" action="#">
+          <div id="title-section" class="input-area">
+            <label>Title</label>
+            <input type="text" placeholder="Enter Title">
+          </div>
+          <div id="time-section" class="input-area">
+            <label>Set Timer</label>
+            <input type="number" min="1" max="5" placeholder="Set Minutes (1 to 5)" oninput="if(this.value > 5) this.value = 5; if(this.value < 1 && this.value != '') this.value = 1;">
+          </div>
+          <div class="input-area" id="btn-area">
+            <button id="btn" type="submit">Create</button>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <script src="toggle.js"></script>
 </body>
