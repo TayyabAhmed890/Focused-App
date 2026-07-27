@@ -10,8 +10,6 @@ let data = sessionStorage.getItem("timer")
 let totalSeconds = data
 let timerID = null
 
-console.log(data)
-
 // format time function
 function formatTime(time) {
     return time < 10 ? "0" + time : time;
