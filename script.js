@@ -10,6 +10,8 @@ let data = sessionStorage.getItem("timer")
 let totalSeconds = data
 let timerID = null
 
+console.log(data)
+
 // format time function
 function formatTime(time) {
     return time < 10 ? "0" + time : time;
@@ -30,13 +32,14 @@ updateDisplay()
 // add event listners
 // start
 start_time.addEventListener("click",()=>{
-    
+
     if (timerID !== null) return;
     
     timerID = setInterval(() => {
         totalSeconds++
         updateDisplay()
     }, 1000);
+
 })
 
 // stop
@@ -46,7 +49,7 @@ stop_time.addEventListener("click",()=>{
         sessionStorage.setItem("timer",totalSeconds)
     }
     clearInterval(timerID);
-    
+
     timerID = null
 })
 
@@ -54,9 +57,13 @@ stop_time.addEventListener("click",()=>{
 reset_time.addEventListener("click",()=>{
     
     if(totalSeconds === 0) return;
-    clearInterval(timerID)
+
     sessionStorage.removeItem("timer")
     totalSeconds = 0
+
+    clearInterval(timerID)
+    timerID = null
+
     updateDisplay()
 })
 
