@@ -1,0 +1,51 @@
+#timers{
+    /* background-color: whitesmoke; */
+    padding: 10px;
+    margin: 13px;
+    margin-top: 5px;
+}
+
+.main{
+    background-color: transparent;
+    border: 2px solid black;
+    list-style: none;
+    padding: 15px;
+    margin: 20px 15px;
+}
+
+.titles-input{
+    /* background-color: green; */
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+}
+
+.time-input{
+    /* background-color: greenyellow; */
+    font-size: 20px;
+    padding: 5px;
+}
+
+#btns{
+    /* background-color: red; */
+    display: flex;
+    gap: 8px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+}
+
+.btn{
+    padding: 10px 8px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    border: none;
+}
+
+.btn:active{
+    transform: scale(1.1);
+}
