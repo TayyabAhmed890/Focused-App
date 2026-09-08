@@ -26,19 +26,20 @@
         <form id="form-time-set" action="#">
           <div id="title-section" class="input-area">
             <label>Title</label>
-            <input type="text" placeholder="Enter Title">
+            <input id="input-title" type="text" placeholder="Enter Title">
           </div>
           <div id="time-section" class="input-area">
             <label>Set Timer</label>
-            <input type="number" min="1" max="5" placeholder="Set Minutes (1 to 5)" oninput="if(this.value > 5) this.value = 5; if(this.value < 1 && this.value != '') this.value = 1;">
+            <input id="input-time" type="number" min="1" max="5" placeholder="Set Minutes (1 to 5)" oninput="if(this.value > 5) this.value = 5; if(this.value < 1 && this.value != '') this.value = 1;">
           </div>
           <div class="input-area" id="btn-area">
             <button id="btn" type="submit">Create</button>
           </div>
-        </form>
+        </form> 
       </section>
     </main>
 
     <script src="toggle.js"></script>
+    <script src="setsession.js"></script>
 </body>
 </html>
